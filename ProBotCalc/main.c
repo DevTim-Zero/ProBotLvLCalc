@@ -22,13 +22,17 @@ int enterLevel() {
 	return lvl;
 }
 
-void lvlExpReq(int lvl) {
+void lvlExpReq() {
 	char ch;
-	L1: 
+	int lvl;
+L1: 
+	printf("Level you want to know the exp value of: ");
+	lvl = enterLevel();
 	printf("The EXP needed to reach that lvl would be: %d!\n", function(lvl));
 	Sleep(1000);
 	printf("Want to check another lvl? (y/n)\n");
 	ch = getch();
+	fflush(stdin);
 	if (ch == 'y') {
 		system("cls");
 		goto L1;
@@ -41,19 +45,19 @@ void explvlUp(int lvl) {
 	printf("Exp needed to Level-Up would be %d!\n",expLvlUp);
 }
 
-void Menu() {
+void menu() {
 	char key;
 	int exp;
 	printf(	"1 - Level Experience Calculator\n"
 			"2 - Exp needed for Level-Up\n"
 			"3 - Exit\n");
 L1: key = getch();
+	fflush(stdin);
 	switch (key)
 	{
 	case '1':
 		system("cls");
-		printf("Level you want to know the exp value of: ");
-		lvlExpReq(enterLevel());
+		lvlExpReq();
 		break;
 	case '2':
 		system("cls");
@@ -70,6 +74,6 @@ L1: key = getch();
 }
 
 void main() {
-	Menu();
+	menu();
 	exit(0);
 }
