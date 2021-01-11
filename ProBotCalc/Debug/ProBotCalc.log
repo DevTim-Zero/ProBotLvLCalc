@@ -1,0 +1,3 @@
+﻿  main.c
+E:\Development\C\ProBotCalc\ProBotCalc\main.c(29,12): warning C4013: 'getch' undefined; assuming extern returning int
+  ProBotCalc.vcxproj -> E:\Development\C\ProBotCalc\Debug\ProBotCalc.exe
