@@ -1,9 +1,9 @@
 ﻿  main.c
-E:\Development\C\ProBotCalc\ProBotCalc\main.c(31,12): warning C4013: 'getch' undefined; assuming extern returning int
-E:\Development\C\ProBotCalc\ProBotCalc\main.c(46,6): warning C4101: 'exp': unreferenced local variable
+E:\Development\C\ProBotCalc\ProBotCalc\main.c(34,12): warning C4013: 'getch' undefined; assuming extern returning int
+E:\Development\C\ProBotCalc\ProBotCalc\main.c(50,6): warning C4101: 'exp': unreferenced local variable
   Generating code
-  1 of 12 functions ( 8.3%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
+  7 of 12 functions (58.3%) were compiled, the rest were copied from previous compilation.
+    1 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   ProBotCalc.vcxproj -> E:\Development\C\ProBotCalc\Release\ProBotCalc.exe
